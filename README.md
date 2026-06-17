@@ -1,42 +1,111 @@
-# Gradient Descent — Code From Scratch
+# Gradient Descent From Scratch
 
--> This project implements **Gradient Descent** from scratch for linear regression and demonstrates how the algorithm updates model parameters iteratively to minimize the loss function.  
--> It focuses on intuition, mathematics, code, and visualizations (loss curve, parameter updates, and regression-line animation).
+## 📌 Project Overview
 
+This project demonstrates the implementation of **Gradient Descent** from scratch for Linear Regression without using any machine learning libraries.
 
-## Objectives:-
--> Derive and implement the gradient descent update rules for slope (`m`) and intercept (`b`) in linear regression.
--> Visualize **loss vs iterations** to study convergence.
--> Observe how different **learning rates** and **initializations** affect training.
--> Build intuition about **batch gradient descent** (can be extended to SGD / mini-batch).
+Using a dataset generated with Scikit-Learn's `make_regression`, the notebook shows how model parameters (**slope** and **intercept**) are updated iteratively to minimize the **Mean Squared Error (MSE)** loss function. The project focuses on building a strong mathematical and intuitive understanding of optimization in Machine Learning.
 
+---
 
-## Topics Covered:-
--> Mean Squared Error (MSE) loss and its gradients
--> Batch Gradient Descent update rules
--> Learning rate tuning and convergence behavior
--> Visualization of loss curve and parameter trajectories
--> Simple extension ideas: stochastic/mini-batch gradient descent, regularization
+## 🎯 Objectives
 
+* Understand the mathematics behind Gradient Descent
+* Implement parameter optimization from scratch
+* Learn how loss decreases during training
+* Visualize convergence through loss curves
+* Study the effect of learning rates on model training
 
-## Implementation Steps:-
-1. Load a simple synthetic or real dataset (single feature for clarity).  
-2. Initialize parameters `m` (slope) and `b` (intercept).  
-3. For each iteration:
-   -> Compute predictions `y_pred = m * x + b`
-   -> Compute loss `MSE = (1/n) * sum((y - y_pred)^2)`
-   -> Compute gradients:
-     -> `dm = -(2/n) * sum(x * (y - y_pred))`
-     -> `db = -(2/n) * sum(y - y_pred)`
-   -> Update:
-     -> `m = m - alpha * dm`
-     -> `b = b - alpha * db`
-4. Record loss and parameters at each iteration for plotting.
-5. Plot loss vs iterations and show final regression line.
+---
 
+## 📂 Dataset
 
-## Libraries Used:-
--> Python (NumPy, Pandas)
--> Matplotlib (for plots)
--> (Optional) seaborn for nicer visuals
+**Dataset Used:** `make_regression`
 
+A synthetic regression dataset generated using Scikit-Learn to demonstrate Gradient Descent and parameter optimization.
+
+---
+
+## 📖 Concepts Covered
+
+* Linear Regression
+* Gradient Descent
+* Mean Squared Error (MSE)
+* Cost Function
+* Learning Rate
+* Parameter Optimization
+* Convergence
+* Model Training
+
+---
+
+## 🛠️ Libraries Used
+
+* Python
+* NumPy
+* Pandas
+* Matplotlib
+
+---
+
+## ⚙️ Implementation Steps
+
+### Data Preparation
+
+* Generate regression data using `make_regression`
+* Visualize the dataset
+
+### Parameter Initialization
+
+* Initialize slope (m) and intercept (b)
+* Set learning rate and iterations
+
+### Gradient Calculation
+
+* Compute predictions
+* Calculate MSE loss
+* Compute gradients for m and b
+
+### Parameter Updates
+
+* Update parameters iteratively
+* Minimize the loss function using Gradient Descent
+
+### Visualization
+
+* Plot Loss vs Iterations
+* Visualize convergence behavior
+* Display final regression line
+
+---
+
+## 🔍 Key Observations
+
+* Loss decreases as Gradient Descent progresses.
+* Learning rate plays a crucial role in convergence.
+* Proper parameter updates lead to the optimal regression line.
+* Gradient Descent forms the foundation of many ML and Deep Learning algorithms.
+
+---
+
+## ✅ Advantages
+
+* Builds strong intuition for optimization algorithms
+* Helps understand how machine learning models learn
+* Demonstrates the role of gradients and learning rates
+* Provides a foundation for advanced optimization techniques
+
+---
+
+## 🏁 Conclusion
+
+Gradient Descent is one of the most important optimization algorithms in Machine Learning. By implementing it from scratch, this project provides a clear understanding of how models iteratively learn the best parameters by minimizing prediction error.
+
+---
+
+## 💻 Technologies Used
+
+* Python
+* NumPy
+* Pandas
+* Matplotlib
