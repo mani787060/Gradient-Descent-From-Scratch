@@ -97,15 +97,17 @@ A synthetic regression dataset generated using Scikit-Learn to demonstrate Gradi
 
 ---
 
-## 🏁 Conclusion
-
-Gradient Descent is one of the most important optimization algorithms in Machine Learning. By implementing it from scratch, this project provides a clear understanding of how models iteratively learn the best parameters by minimizing prediction error.
-
----
-
 ## 💻 Technologies Used
 
 * Python
 * NumPy
 * Pandas
 * Matplotlib
+
+---
+
+## 🏁 Conclusion
+
+Gradient Descent is one of the most important optimization algorithms in Machine Learning. By implementing it from scratch, this project provides a clear understanding of how models iteratively learn the best parameters by minimizing prediction error.
+
+
